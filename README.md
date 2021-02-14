@@ -22,6 +22,9 @@ There will be an option to view a Class Report which will show all the informati
 COMMANDS TO RUN THE PROJECT
 
 $$$ mvn clean install 
+
+</br>
+
 /target $$$ java -jar phase2project-1.0-SNAPSHOT.jar 
 
 HAPPY CODING !!!!
