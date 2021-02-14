@@ -25,7 +25,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/css/*", "/js/*").permitAll().antMatchers("/api/**").hasRole("ADMIN")
+		http.authorizeRequests().antMatchers("/css/*", "/js/*").permitAll().antMatchers("/**").hasRole("ADMIN")
 				.anyRequest().authenticated().and().httpBasic();
 	}
 
@@ -33,7 +33,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Bean
 	protected UserDetailsService userDetailsService() {
 		UserDetails annaSmithUser = User.builder().username("sand").password(passwordEncoder.encode("sand"))
-				.roles("ADMIN") // ROLE_STUDENT
+				.roles("STUDENT") // ROLE_STUDENT
 				.build();
 
 		UserDetails lindaUser = User.builder().username("admin").password(passwordEncoder.encode("admin"))
