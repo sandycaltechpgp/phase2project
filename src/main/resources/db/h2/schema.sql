@@ -2,7 +2,6 @@ DROP TABLE teacher IF EXISTS;
 DROP TABLE subject IF EXISTS;
 DROP TABLE class IF EXISTS;
 DROP TABLE student IF EXISTS;
-DROP TABLE class_subject IF EXISTS;
 DROP TABLE teacher_subject IF EXISTS;
 
 CREATE TABLE teacher (
@@ -36,15 +35,6 @@ CREATE TABLE subject (
   name VARCHAR(30)
 );
 CREATE INDEX id4 ON subject (id);
-
-CREATE TABLE class_subject (
-  id         INTEGER IDENTITY PRIMARY KEY,
-  class_id INTEGER,
-  subject_id INTEGER
-
-);
-CREATE INDEX id11 ON class_subject (id);
-CREATE INDEX id22 ON class_subject (class_id,subject_id);
 
 CREATE TABLE teacher_subject (
   id         INTEGER IDENTITY PRIMARY KEY,

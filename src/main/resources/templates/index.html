@@ -9,8 +9,9 @@
 <table id="classes" th:border="5" width="100%">
     <thead>
     <tr>
-        <th>Name</th>
-        <th>COURSEID</th>
+        <th>NAME</th>
+        <th>ClASSID</th>
+        <th>YEAR</th>
         <th>STUDENTS</th>
         <th>TEACHERS</th>
         <th>SUBJECTS</th>
@@ -20,6 +21,7 @@
     <tr th:each="class : ${classes}">
         <td th:text="${class.name}"></td>
         <td th:text="${class.id}"></td>
+        <td th:text="${class.year}"></td>
         <td><span><a th:href="${class.studentsLink}">STUDENTS</a></span><br></td>
         <td><span><a th:href="${class.teachersLink}">TEACHERS</a></span><br></td>
         <td><span><a th:href="${class.subjectsLink}">SUBJECTS</a></span><br></td>
