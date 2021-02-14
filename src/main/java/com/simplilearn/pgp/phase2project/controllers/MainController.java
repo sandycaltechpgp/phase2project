@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RequestParam;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Learner's Academy Spring Boot Application.
+ *
+ * @author Sandeep Kumar Jakkaraju
+ */
 @Controller
 public class MainController {
 

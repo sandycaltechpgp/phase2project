@@ -5,6 +5,11 @@ import org.springframework.jdbc.core.RowMapper;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+/**
+ * Learner's Academy Spring Boot Application.
+ *
+ * @author Sandeep Kumar Jakkaraju
+ */
 public class ClassRowMapper implements RowMapper<Classes> {
 
 	@Override

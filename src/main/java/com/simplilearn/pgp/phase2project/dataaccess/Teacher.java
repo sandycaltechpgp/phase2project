@@ -1,5 +1,10 @@
 package com.simplilearn.pgp.phase2project.dataaccess;
 
+/**
+ * Learner's Academy Spring Boot Application.
+ *
+ * @author Sandeep Kumar Jakkaraju
+ */
 public class Teacher {
 
 	private Long id;

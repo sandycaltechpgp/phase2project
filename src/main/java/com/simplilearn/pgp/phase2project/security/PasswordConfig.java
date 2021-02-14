@@ -5,6 +5,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+/**
+ * Learner's Academy Spring Boot Application.
+ *
+ * @author Sandeep Kumar Jakkaraju
+ */
 @Configuration
 public class PasswordConfig {
 
