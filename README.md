@@ -18,3 +18,12 @@ The administrator can:
      
 
 There will be an option to view a Class Report which will show all the information about the class, such as the list of students, subjects, and teachers
+
+COMMANDS TO RUN THE PROJECT
+
+$$$ mvn clean install 
+/target $$$ java -jar phase2project-1.0-SNAPSHOT.jar 
+
+HAPPY CODING !!!!
+
+
